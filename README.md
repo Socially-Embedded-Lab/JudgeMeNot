@@ -4,7 +4,7 @@ This repository contains the replication code for the ACL 2026 paper "JudgeMeNot
 
 ## Methods
 
-The project implements four complementary approaches, all built on top of **Gemma** (1B / 4B) and **DictaLM** base models using LoRA (Low-Rank Adaptation):
+The project implements four complementary approaches, all built on top of **Gemma** (1B / 4B) using LoRA (Low-Rank Adaptation):
 
 | Method | Key idea | Data format |
 |---|---|---|
@@ -46,7 +46,6 @@ pip install -r requirements.txt
 
 > Requires Python 3.10+ and a CUDA-capable GPU for training and inference.
 
-> **Secrets:** Do not commit Hugging Face or other API tokens. Use `huggingface-cli login` or set `HF_TOKEN` / `HUGGING_FACE_HUB_TOKEN` in your environment (see `analyze_data.py` for tokenized chunk statistics on gated models).
 
 ## Usage
 
